@@ -10,10 +10,11 @@ body {
 }
 
 header {
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    align-items: center;
     background-color: darkblue;
 }
 
@@ -36,6 +37,19 @@ div .items {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* knten */
 main {
     background-color: white;
@@ -50,7 +64,7 @@ nav {
     background-color: black;
     border-bottom-right-radius: 10px;
     opacity: 90%;
-    width: 60%;
+    width: 70%;
     height: 90vh;
     padding: 20px;
     z-index: 1;
@@ -124,7 +138,7 @@ li>a:hover {
 
 #banner {
     width: 100%;
-    height: 25vh;
+    height: 20vh;
     object-fit: cover;
     border-bottom: 1.5px solid white;
 }
@@ -145,18 +159,10 @@ li>a:hover {
     margin-top: 5vh;
 }
 
-.button-follow>button>a {
-    text-decoration: none;
-    color: white;
-}
-
-.button-follow>button>a:hover {
-    color: black;
-}
-
 .follow {
     width: 20%;
     padding: 10px;
+    color: white;
     background-color: transparent;
     border: 1.5px solid white;
     border-radius: 10px;
@@ -165,6 +171,7 @@ li>a:hover {
 .resume {
     width: 20%;
     padding: 10px;
+    color: white;
     background-color: transparent;
     border: 1.5px solid white;
     border-radius: 10px;
@@ -204,7 +211,7 @@ li>a:hover {
 /* about me */
 #aboutMe {
     margin-top: 10vh;
-    padding: 20px;
+    padding: 10px;
 }
 
 #aboutMe>h1 {
@@ -216,127 +223,126 @@ li>a:hover {
     margin-top: 1vh;
 }
 
+
+
+
+
+
+
 /* education */
 #education {
     margin-top: 10vh;
-    padding: 20px;
-}
-
-#education>h1 {
-    text-align: center;
+    padding: 10px;
 }
 
 .card-edu {
+    margin-top: 2vh;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 2vh;
+    gap: 30px;
 }
 
 .card-item {
     display: flex;
-    gap: 10px;
-    width: 100%;
-    background-color: darkblue;
-    padding: 10px;
-    border-radius: 10px;
-    color: black;
-}
-
-.subjudul-edu {
-    text-align: center;
-    margin-bottom: 1vh;
-    font-size: 1.2rem;
-    text-align: left;
-}
-
-.card-item>p {
-    text-align: justify;
+    flex-direction: column;
 }
 
 .card-image {
-    width: 30%;
-    height: auto;
-    border-radius: 10px;
-    background-color: white;
-    padding: 10px;
-    box-shadow: 2px 5px 5px 0px black
-}
-
-.card-image>img {
     width: 100%;
-    border-radius: 10px;
-    mix-blend-mode: multiply;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
 .card-info {
-    width: 70%;
-    height: auto;
-    background-color: white;
-    border-radius: 10px;
+    width: 100%;
+    background-color: darkblue;
     padding: 10px;
-    box-shadow: 2px 5px 5px 0px black
+    height: 25vh;
 }
 
-.alamat {
-    font-size: 10px;
-    font-weight: 500;
-    color: darkblue;
-    margin-top: -1vh;
-    margin-bottom: 1vh;
+.card-image>img {
+    width: 50%;
 }
 
-.jurusan {
+.card-info>.alamat {
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.card-info>.jurusan {
+    margin-top: 2vh;
     font-weight: 600;
+    font-size: 1.4rem;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* skills */
 #skills {
     margin-top: 10vh;
-    padding: 20px;
-}
-
-#skills>h1 {
-    text-align: center;
+    padding: 10px;
 }
 
 .card-skill {
     margin-top: 2vh;
     display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .card-skill-item {
     display: flex;
-    width: 45%;
+    width: 100%;
     background-color: darkblue;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
 }
 
 .image-skill>img {
-    width: 50%;
+    width: 60%;
     height: auto;
 }
 
 .detail-skill>p {
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* project me */
 #project {
     margin-top: 10vh;
-    padding: 20px;
-}
-
-#project>h1 {
-    text-align: center;
+    padding: 10px;
 }
 
 .card-project {
@@ -347,23 +353,18 @@ li>a:hover {
 }
 
 .card-project-item {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 90%;
-    margin: 0 auto;
-    height: 60vh;
+    width: 100%;
+    height: auto;
     background-color: darkblue;
-    padding: 10px;
-    border-radius: 10px;
-    color: white;
-    border-radius: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .image-project {
     width: 100%;
     background-color: white;
-    height: 30vh;
+    padding: 10px;
+    height: 40vh;
     border-radius: 10px;
 }
 
@@ -373,44 +374,56 @@ li>a:hover {
     border-radius: 10px;
 }
 
+
 .detail-project {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    padding: 10px;
+}
+
+.detail-project>h2 {
+    font-size: 1.5rem;
 }
 
 .detail-project>p {
+    font-size: 1rem;
     text-align: justify;
     margin-top: 1vh;
 }
 
-.detail-project>button {
-    padding: 10px;
+.view {
     width: 100%;
     margin-top: 2vh;
     background-color: aliceblue;
-    font-weight: bold;
-    font-size: 15px;
-    color: black;
-    border: none;
+    text-align: center;
+    font-weight: 600;
+    padding: 10px;
 }
 
-.detail-project>button:hover {
-    background-color: blue;
-    transition: all 1s;
-    color: white;
-    box-shadow: 1px 4px 1px 0px black;
+.view>a {
+    color: black;
+    text-decoration: none;
 }
+
+.view:hover {
+    background-color: aqua;
+    transition: all 1s;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
 /* contact */
 #contact {
     margin-top: 10vh;
-    padding: 20px;
+    padding: 10px;
     background-color: darkblue;
 }
 
@@ -418,60 +431,29 @@ li>a:hover {
     text-align: center;
 }
 
-.card-contact {
+
+.card-sosmed {
     display: flex;
-    margin-top: 2vh;
-    flex-wrap: wrap;
-    gap: 10px;
     justify-content: space-between;
-}
-
-.card-contact-items {
-    background-color: aliceblue;
-    border-radius: 10px;
-    padding: 5px;
-    width: 45%;
-    display: flex;
     align-items: center;
+    margin-top: 2vh;
+    padding: 20px;
 }
 
-.card-contact-items:hover {
-    background-color: darkturquoise;
-    transition: all 1s;
-    box-shadow: 2px 3px 3px 0px black;
-}
-
-.image-contact {
-    width: 20%;
-}
-
-.image-contact>img {
-    width: 80%;
+.card-sosmed>a>img {
+    width: 90%;
     height: auto;
 }
 
-.detail-contact {
-    width: 80%;
-}
-
-.detail-contact>p>a {
-    text-decoration: none;
-    color: black;
-}
-
-.detail-contact>p>a:hover {
-    text-decoration: underline;
-    transition: all 1s;
+.card-sosmed>a>img:hover {
+    border-bottom: 1px solid white;
 }
 
 
 
-.locatoin {
-    width: 100%;
-    margin-top: 5vh;
-    display: flex;
-    justify-content: center;
-}
+
+
+
 
 iframe {
     width: 100%;
@@ -479,8 +461,16 @@ iframe {
     border-radius: 10px;
 }
 
+
+
+
+
+
+
+
+
+
 footer {
-    margin-top: 5vh;
     padding: 20px;
     text-align: center;
 }
@@ -499,7 +489,7 @@ footer {
 /* media query */
 /* phone */
 @media only screen and (max-width: 600px) {
-    .peringatan{
+    .peringatan {
         display: none;
     }
 }
@@ -509,14 +499,16 @@ footer {
     .container {
         display: none;
     }
-    .peringatan{
+
+    .peringatan {
         width: 90%;
         margin: 0 auto;
         height: 90vh;
         display: flex;
         align-items: center;
     }
-    .peringatan>h1{
+
+    .peringatan>h1 {
         text-align: center;
         color: white;
         font-style: italic;
@@ -532,14 +524,16 @@ footer {
     .container {
         display: none;
     }
-    .peringatan{
+
+    .peringatan {
         width: 50%;
         margin: 0 auto;
         height: 90vh;
         display: flex;
         align-items: center;
     }
-    .peringatan>h1{
+
+    .peringatan>h1 {
         text-align: center;
         color: white;
         font-style: italic;
@@ -555,14 +549,16 @@ footer {
     .container {
         display: none;
     }
-    .peringatan{
+
+    .peringatan {
         width: 50%;
         margin: 0 auto;
         height: 90vh;
         display: flex;
         align-items: center;
     }
-    .peringatan>h1{
+
+    .peringatan>h1 {
         text-align: center;
         color: white;
         font-style: italic;
@@ -578,14 +574,16 @@ footer {
     .container {
         display: none;
     }
-    .peringatan{
+
+    .peringatan {
         width: 50%;
         margin: 0 auto;
         height: 90vh;
         display: flex;
         align-items: center;
     }
-    .peringatan>h1{
+
+    .peringatan>h1 {
         text-align: center;
         color: white;
         font-style: italic;
